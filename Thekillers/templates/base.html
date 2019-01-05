@@ -1,0 +1,140 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{% block title %}Thekiller{% endblock %}</title>
+    <meta charset="UTF-8">
+    {% block extra_head %}{% endblock %}
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/estiloIndex.css' %}" rel="stylesheet">
+</head>
+<body id="page-top">
+        <!-- Navigation -->
+       
+    <header class="masthead">
+        {% block header %}
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+                <div class="container">
+                  <a class="navbar-brand js-scroll-trigger" href="#page-top">Inicio</a>
+                  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">Tecnologías</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            <div class="intro-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <br><br><br><br><br><br>
+                      <h1 class="">Thekiller</h1>
+                      <p class="intro-text">Proyecto33 Es un Web Service con el objetivo de tener una gran cantidad de rooms para emuladores de juego clasicos</p>
+                        <br><h1 class="">Visión del proyecto</h1><p class="intro-text"> El éxito del proyecto para el ramo de ingeniería web.</p></p>
+                      <a href="#about" class="btn btn-circle js-scroll-trigger">
+                        <i class="fa fa-angle-double-down animated"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endblock %}
+       
+       
+        
+    </header>
+    <section>
+    {% block section %}
+        <div id="about" class="content-section text-center">
+            
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                <h2 >Aqui algunas fotos o mockups del sistema</h2>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <!-- Download Section -->
+    <div id="download" class="download-section content-section text-center">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+            <h2>Proyecto33 en Desarrollo</h2>
+            <p>Aquí una foto con weones ocupando el sistema o nostros trabajando xD</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="content-section text-center">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                    <h2>Puedes ubicarnos en redes sociales:</h2>
+                    <ul class="list-inline banner-social-buttons">
+                        <li class="list-inline-item">
+                        <a href="https://www.facebook.com/michael.fernandez.3158652" class="btn btn-default btn-lg">
+                            <i class="fa fa-facebook fa-fw"></i>
+                            <span class="network-name">Facebook</span>
+                        </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/MikoFerdinandSe" class="btn btn-default btn-lg">
+                            <i class="fa fa-twitter fa-fw"></i>
+                            <span class="network-name">Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+      {% endblock %}
+    </section>
+    
+    {%block Footer%}
+    <!-- Footer -->
+     <footer>
+        <div class="container text-center">
+          <p>Thekiller-2017</p>
+        </div>
+      </footer>
+      {%endblock%}
+
+    {% block extra_body %}
+        <!-- Bootstrap core JavaScript -->
+        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'vendor/popper/popper.min.js' %}"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    
+        <!-- Plugin JavaScript -->
+        <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    
+        <!-- Custom scripts for this template -->
+        <script src="{% static 'js/grayscale.min.js' %}"></script>
+    
+    {% endblock %}
+</body>
+</html>
